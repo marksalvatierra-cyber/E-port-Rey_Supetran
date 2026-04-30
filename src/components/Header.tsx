@@ -50,7 +50,7 @@ export default function Header({ onMenuClick }: HeaderProps) {
           </button>
           <div className="hidden sm:flex items-center gap-3 pl-3 border-l border-border">
             <div className="text-right">
-              <p className="text-sm font-medium text-foreground">Rey B.Supetran</p>
+              <p className="text-sm font-medium text-foreground">John Rey B. Supetran</p>
               <p className="text-xs text-muted-foreground">BSIT · 4th Year</p>
             </div>
             <div className="w-9 h-9 rounded-full gradient-primary flex items-center justify-center text-white font-semibold text-sm shadow-soft">

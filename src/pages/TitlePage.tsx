@@ -14,8 +14,8 @@ import {
 import campusBg from "../assets/campus-bg.jpg";
 
 const studentInfo = [
-  { label: "Student Name", value: "Rey Supetran" },
-  { label: "Student ID", value: "MA-21-IT-01185" },
+  { label: "Student Name", value: "John Rey B. Supetran" },
+  { label: "Student ID", value: "MA22-IT-06261" },
   {
     label: "Course & Year",
     value: "Bachelor of Science in Information Technology, 4th Year",
