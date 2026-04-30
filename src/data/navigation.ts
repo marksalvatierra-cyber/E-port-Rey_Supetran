@@ -34,13 +34,9 @@ export const navigation: NavItem[] = [
     icon: HiOutlineBookOpen,
     path: "/introduction",
     children: [
-      { label: "Acknowledgment", path: "/introduction#acknowledgment" },
-      { label: "Student Trainee Prayer", path: "/introduction#prayer" },
-      { label: "Personal Philosophy", path: "/introduction#philosophy" },
-      { label: "Career Plan", path: "/introduction#career" },
-      { label: "Importance of Internship", path: "/introduction#importance" },
-      { label: "Objectives of Internship", path: "/introduction#objectives" },
-      { label: "Time and Place", path: "/introduction#time-place" },
+      { label: "A. Importance of Internship", path: "/introduction#importance" },
+      { label: "B. Objectives of Internship", path: "/introduction#objectives" },
+      { label: "C. Time and Place", path: "/introduction#time-place" },
     ],
   },
   {
@@ -49,10 +45,10 @@ export const navigation: NavItem[] = [
     icon: HiOutlineOfficeBuilding,
     path: "/company-profile",
     children: [
-      { label: "Nature of Agency", path: "/company-profile#nature" },
-      { label: "Mission / Vision / Goal", path: "/company-profile#mvg" },
-      { label: "History / Background", path: "/company-profile#history" },
-      { label: "Organizational Structure", path: "/company-profile#org" },
+      { label: "1. Nature of Agency", path: "/company-profile#nature" },
+      { label: "2. Mission / Vision / Goal", path: "/company-profile#mvg" },
+      { label: "3. History / Background", path: "/company-profile#history" },
+      { label: "4. Organizational Structure", path: "/company-profile#org" },
     ],
   },
   {
@@ -61,10 +57,10 @@ export const navigation: NavItem[] = [
     icon: HiOutlineBriefcase,
     path: "/work-experiences",
     children: [
-      { label: "Weekly Reports", path: "/work-experiences#weekly" },
-      { label: "Daily Time Record", path: "/work-experiences#dtr" },
-      { label: "Progress Report", path: "/work-experiences#progress" },
-      { label: "Analysis Report", path: "/work-experiences#analysis" },
+      { label: "1. Weekly Reports", path: "/work-experiences#weekly" },
+      { label: "2. Daily Time Record", path: "/work-experiences#dtr" },
+      { label: "3. Progress Report", path: "/work-experiences#progress" },
+      { label: "4. Analysis Report", path: "/work-experiences#analysis" },
     ],
   },
   {

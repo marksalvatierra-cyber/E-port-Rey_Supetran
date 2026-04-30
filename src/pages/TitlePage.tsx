@@ -14,15 +14,15 @@ import {
 import campusBg from "../assets/campus-bg.jpg";
 
 const studentInfo = [
-  { label: "Student Name", value: "Julian Bernard T. Alvarado" },
+  { label: "Student Name", value: "Rey Supetran" },
   { label: "Student ID", value: "MA-21-IT-01185" },
   {
     label: "Course & Year",
     value: "Bachelor of Science in Information Technology, 4th Year",
   },
   { label: "Institution", value: "Occidental Mindoro State College" },
-  { label: "Host Company", value: "DevOps Outsourcing Inc. / Mobbiz Solutions" },
-  { label: "OJT Coordinator", value: "Prof. Maria Santos" },
+  { label: "Host Company", value: "Occidental Mindoro State College, Sj Campus Registrar" },
+  { label: "OJT Coordinator", value: "Leiza Pelayo" },
 ];
 
 const tableOfContents = [

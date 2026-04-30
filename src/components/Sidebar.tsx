@@ -50,7 +50,7 @@ export default function Sidebar({ mobileOpen, onClose }: SidebarProps) {
         <div className="relative">
           <img
             src={profilePic}
-            alt="Julian Bernard T. Alvarado"
+            alt="Rey Supetran"
             width={96}
             height={96}
             loading="lazy"
@@ -59,9 +59,9 @@ export default function Sidebar({ mobileOpen, onClose }: SidebarProps) {
           <span className="absolute bottom-1 right-1 w-4 h-4 rounded-full bg-success border-2 border-card" />
         </div>
         <p className="mt-3 font-semibold text-sm text-foreground">
-          Julian Bernard T. Alvarado
+          Rey Supetran
         </p>
-        <p className="text-xs text-primary mt-0.5">Full-Stack Developer / OJT Student</p>
+        <p className="text-xs text-primary mt-0.5">OJT Student</p>
       </div>
 
       {/* Nav */}
@@ -151,7 +151,7 @@ export default function Sidebar({ mobileOpen, onClose }: SidebarProps) {
       </nav>
 
       <div className="px-6 py-3 border-t border-border text-xs text-muted-foreground text-center">
-        v1.0 · Production
+       E-Portfolio | Rey Supetran
       </div>
     </aside>
   );
