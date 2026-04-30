@@ -11,7 +11,7 @@ import {
   HiOutlineLightBulb,
   HiOutlineMap,
 } from "react-icons/hi";
-import campusBg from "../assets/campus-bg.jpg";
+import campusBg from "../assets/campus-bg.png";
 
 const studentInfo = [
   { label: "Student Name", value: "John Rey B. Supetran" },
