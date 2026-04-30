@@ -49,7 +49,7 @@ export default function Sidebar({ mobileOpen, onClose }: SidebarProps) {
       <div className="px-5 py-5 border-b border-border flex flex-col items-center text-center">
         <div className="relative">
           <img
-            src={profilePic}
+            src="/images/profile.jpg"
             alt="Rey B.Supetran"
             width={96}
             height={96}

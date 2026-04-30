@@ -45,6 +45,7 @@ export const navigation: NavItem[] = [
     icon: HiOutlineOfficeBuilding,
     path: "/company-profile",
     children: [
+      { label: "Company Overview", path: "/company-profile#overview" },
       { label: "1. Nature of Agency", path: "/company-profile#nature" },
       { label: "2. Mission / Vision / Goal", path: "/company-profile#mvg" },
       { label: "3. History / Background", path: "/company-profile#history" },
