@@ -50,7 +50,7 @@ export default function Sidebar({ mobileOpen, onClose }: SidebarProps) {
         <div className="relative">
           <img
             src={profilePic}
-            alt="Rey Supetran"
+            alt="Rey B.Supetran"
             width={96}
             height={96}
             loading="lazy"
@@ -59,7 +59,7 @@ export default function Sidebar({ mobileOpen, onClose }: SidebarProps) {
           <span className="absolute bottom-1 right-1 w-4 h-4 rounded-full bg-success border-2 border-card" />
         </div>
         <p className="mt-3 font-semibold text-sm text-foreground">
-          Rey Supetran
+          Rey B.Supetran
         </p>
         <p className="text-xs text-primary mt-0.5">OJT Student</p>
       </div>
@@ -151,7 +151,7 @@ export default function Sidebar({ mobileOpen, onClose }: SidebarProps) {
       </nav>
 
       <div className="px-6 py-3 border-t border-border text-xs text-muted-foreground text-center">
-       E-Portfolio | Rey Supetran
+       E-Portfolio | Rey B.Supetran
       </div>
     </aside>
   );
