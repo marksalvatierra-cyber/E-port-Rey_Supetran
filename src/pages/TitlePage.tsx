@@ -181,7 +181,7 @@ export default function TitlePage() {
     </p>
 
     <p>
-      First, to our OJT Coordinator, <strong className="text-foreground">Ms. Marites D. Escultor</strong>, thank you for your patience, guidance, and continuous encouragement that helped us successfully complete this training journey.
+      First, to our OJT Coordinator, <strong className="text-foreground">Maam. Leiza Linda L. Pelayo</strong>, thank you for your patience, guidance, and continuous encouragement that helped us successfully complete this training journey.
     </p>
 
     <p>
@@ -193,7 +193,7 @@ export default function TitlePage() {
     </p>
 
     <p>
-      To my fellow interns, Ms. Mary Felle Malayas, Ms. Ranela Valencia, Mr. Dale Decain, and Mr. Kenji Fujita, thank you for the teamwork, support, and friendship we built during this journey. Your presence made the experience more enjoyable and meaningful.
+      To my fellow interns, <strong className="text-foreground">Ms. De San Jose Noli Jr., Ms. Gregorio, jerwin Q, and Ms. Zacarias,Joselle Ma Castro</strong>, thank you for the teamwork, support, and friendship we built during this journey. Your presence made the experience more enjoyable and meaningful.
     </p>
 
     <p>

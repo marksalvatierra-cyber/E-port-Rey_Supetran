@@ -37,7 +37,8 @@ const items: AppendixItem[] = [
   ] },
   { title: "Certificate of Completion", type: "Appendix K", icon: HiOutlineDocumentText, image: "/appendices/completion.jpg" },
   { title: "Certificate of Clearance", type: "Appendix L", icon: HiOutlineDocumentText, image: "/appendices/clearance.jpg" },
-  { title: "Curriculum Vitae", type: "Appendix M", icon: HiOutlineDocumentText,pages: [
+  { title: "Performance/Proficiency Rating Sheet", type: "Appendix M", icon: HiOutlineDocumentText, image: "/appendices/clearance.jpg" },
+  { title: "Curriculum Vitae", type: "Appendix Q", icon: HiOutlineDocumentText,pages: [
     "/appendices/vitae1.jpg",
     "/appendices/vitae2.jpg"
   ] },
@@ -73,6 +74,7 @@ export default function Appendices() {
       </div>
 
       <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
+
         {items.map((item, i) => {
           const Icon = item.icon;
           return (
@@ -112,6 +114,149 @@ export default function Appendices() {
           );
         })}
       </div>
+
+<section className="bg-card border border-border rounded-2xl p-6 sm:p-8 shadow-card">
+  
+  <Badge className="mb-3 bg-secondary text-muted-foreground">
+    Appendix N
+  </Badge>
+
+  <h2 className="text-xl font-bold text-foreground">
+    Pre-Service Seminar Pictures
+  </h2>
+
+  <p className="text-muted-foreground leading-relaxed mt-3">
+    This section presents documentation photos taken during the Pre-Service Seminar.
+    The seminar provided essential orientation, guidelines, and expectations for interns
+    before deployment to their respective training offices.
+  </p>
+
+  <div className="grid md:grid-cols-2 gap-4 mt-4">
+    <img src="/appendices/seminar1.jpg" className="rounded-lg border" />
+    <img src="/appendices/seminar2.jpg" className="rounded-lg border" />
+    <img src="/appendices/seminar3.jpg" className="rounded-lg border" />
+    <img src="/appendices/seminar3.jpg" className="rounded-lg border" />
+  </div>
+
+</section>
+
+<section className="bg-card border border-border rounded-2xl p-6 sm:p-8 shadow-card">
+    <Badge className="mb-3 bg-secondary text-muted-foreground">
+    Appendix O
+  </Badge>
+
+  <h2 className="text-xl font-bold text-foreground">
+    Office Works Pictures
+  </h2>
+  <p className="text-muted-foreground leading-relaxed">
+    This section shows documentation of actual tasks and activities performed during the On-the-Job Training
+    at the OMSC Registrar Office. It reflects real workplace exposure, including clerical work, assistance,
+    and administrative tasks.
+  </p>
+
+  <div className="grid md:grid-cols-2 gap-4 mt-4">
+    <img src="/images/pic-work1.jpg" className="rounded-lg border" />
+    <img src="/images/pic-work2.jpg" className="rounded-lg border" />
+  <img src="/images/pic-work3.jpg" className="rounded-lg border" />
+  <img src="/images/pic-work4.jpg" className="rounded-lg border" />
+  <img src="/images/pic-work5.jpg" className="rounded-lg border" />
+  <img src="/images/pic-work6.jpg" className="rounded-lg border" />
+  <img src="/images/pic-work7.jpg" className="rounded-lg border" />
+  <img src="/images/pic-work8.jpg" className="rounded-lg border" />
+  </div>
+</section>
+
+<section className="bg-card border border-border rounded-2xl p-6 sm:p-8 shadow-card">
+
+  {/* HEADER */}
+  <div className="flex items-center justify-between flex-wrap gap-2 mb-4">
+    <Badge className="bg-secondary text-muted-foreground">
+      Appendix P
+    </Badge>
+
+    <span className="text-xs text-muted-foreground">
+      Official Document
+    </span>
+  </div>
+
+  <h2 className="text-2xl font-bold text-foreground">
+    Code of Ethics for CAST Student Internship
+  </h2>
+
+  <p className="text-sm text-muted-foreground mt-1">
+    College of Arts, Sciences, and Technology
+  </p>
+
+  {/* DIVIDER */}
+  <div className="border-t border-border my-5" />
+
+  {/* INTRO */}
+  <p className="text-muted-foreground leading-relaxed">
+    This section presents the official Code of Ethics that governed student conduct during the internship.
+  </p>
+
+  {/* PREAMBLE CARD */}
+  <div className="mt-6 p-4 rounded-xl bg-primary/5 border border-primary/20">
+    <p className="text-sm font-semibold text-primary mb-2">
+      Preamble
+    </p>
+    <p className="text-sm text-muted-foreground leading-relaxed">
+      I will use my special knowledge for the benefit of the public. I will serve employees and clients
+      with integrity, subject to an overriding responsibility to the public interest, and I will strive
+      to enhance the competence and prestige of the profession.
+    </p>
+  </div>
+
+  {/* PRINCIPLES */}
+  <div className="mt-6">
+    <p className="text-sm font-semibold text-foreground mb-3">
+      Principles and Responsibilities
+    </p>
+
+    <ul className="space-y-3">
+      {[
+        "Promote public knowledge, understanding, and appreciation of information technology.",
+        "Consider the general welfare and public good in all professional work.",
+        "Advertise services in a clear, honest, and truthful manner.",
+        "Comply with intellectual property laws, patent laws, and related regulations.",
+        "Accept full responsibility and perform duties with competence and professionalism.",
+        "Provide truthful statements about skills, services, and capabilities.",
+        "Respect confidentiality unless disclosure is required by law.",
+        "Strive for the highest quality in products and services.",
+        "Avoid involvement in unlawful or unethical system development.",
+        "Continuously improve professional knowledge and uphold IT standards."
+      ].map((item, i) => (
+        <li key={i} className="flex items-start gap-3 text-sm text-muted-foreground">
+          
+          {/* ICON BULLET */}
+          <div className="mt-1 w-2 h-2 rounded-full bg-primary shrink-0" />
+
+          <span>{item}</span>
+        </li>
+      ))}
+    </ul>
+  </div>
+
+</section>
+
+<section className="bg-card border border-border rounded-2xl p-6 sm:p-8 shadow-card">
+   <Badge className="mb-3 bg-secondary text-muted-foreground">
+    Appendix R
+  </Badge>
+
+  <h2 className="text-xl font-bold text-foreground">
+    OJT Portfolio Evaluation Form
+  </h2>
+  <p className="text-muted-foreground leading-relaxed">
+    This section contains the official evaluation form used to assess the intern’s overall performance during
+    the On-the-Job Training. It includes ratings, comments, and final assessment from the supervisor and evaluators.
+  </p>
+
+  <div className="mt-4 grid md:grid-cols-2 gap-4">
+    <img src="/appendices/ojt-eval1.jpg" className="rounded-lg border" />
+    <img src="/appendices/ojt-eval2.jpg" className="rounded-lg border" />
+  </div>
+</section>
 
       <Dialog open={!!selectedItem} onOpenChange={(open) => !open && closeImage()}>
        <DialogContent className="max-w-5xl w-[95vw] h-[90vh] p-4 gap-4 flex flex-col bg-black/40 backdrop-blur-sm [&>button]:bg-transparent [&>button]:shadow-none [&>button]:border-none [&>button]:text-white [&>button]:hover:bg-transparent">
