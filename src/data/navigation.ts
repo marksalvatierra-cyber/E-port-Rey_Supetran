@@ -46,10 +46,10 @@ export const navigation: NavItem[] = [
     path: "/company-profile",
     children: [
       { label: "Company Overview", path: "/company-profile#overview" },
-      { label: "1. Nature of Agency", path: "/company-profile#nature" },
-      { label: "2. Mission / Vision / Goal", path: "/company-profile#mvg" },
+      { label: "1. Nature of Agency", path: "/company-profile#nature-agency" },
+      { label: "2. Mission / Vision / Goal", path: "/company-profile#vision-mission" },
       { label: "3. History / Background", path: "/company-profile#history" },
-      { label: "4. Organizational Structure", path: "/company-profile#org" },
+      { label: "4. Organizational Structure", path: "/company-profile#org-chart" },
     ],
   },
   {
@@ -58,10 +58,10 @@ export const navigation: NavItem[] = [
     icon: HiOutlineBriefcase,
     path: "/work-experiences",
     children: [
-      { label: "1. Weekly Reports", path: "/work-experiences#weekly" },
+      { label: "1. Weekly Reports", path: "/work-experiences#weekly-reports" },
       { label: "2. Daily Time Record", path: "/work-experiences#dtr" },
-      { label: "3. Progress Report", path: "/work-experiences#progress" },
-      { label: "4. Analysis Report", path: "/work-experiences#analysis" },
+      { label: "3. Progress Report", path: "/work-experiences#internship-progress" },
+      { label: "4. Analysis Report", path: "/work-experiences#internship-analysis" },
     ],
   },
   {

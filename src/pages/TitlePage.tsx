@@ -22,7 +22,7 @@ const studentInfo = [
   },
   { label: "Institution", value: "Occidental Mindoro State College" },
   { label: "Host Company", value: "Occidental Mindoro State College, Sj Campus Registrar" },
-  { label: "OJT Coordinator", value: "Leiza Pelayo" },
+  { label: "OJT Coordinator", value: "Leiza Linda L. Pelayo" },
 ];
 
 const tableOfContents = [
@@ -172,28 +172,44 @@ export default function TitlePage() {
 
       {/* ACKNOWLEDGMENT */}
       <section className="bg-card border border-border rounded-2xl p-6 sm:p-8 shadow-card">
-        <SectionTitle eyebrow="Section 01" title="Acknowledgment" icon={HiOutlineHeart} />
-        <div className="prose prose-sm max-w-none text-muted-foreground leading-relaxed space-y-4">
-          <p>
-            I would like to express my deepest gratitude to my OJT coordinator,
-            <strong className="text-foreground"> Prof. Maria Santos</strong>, for her
-            guidance and unwavering support throughout this journey. Her wisdom and
-            patience have been instrumental in shaping this internship experience.
-          </p>
-          <p>
-            To my host company, for entrusting me with meaningful work and giving me
-            the chance to learn from real-world projects — thank you. To my
-            supervisors and colleagues, your mentorship turned every challenge into a
-            stepping stone for growth.
-          </p>
-          <p>
-            Finally, to my family and friends — your encouragement is the foundation
-            on which all of this stands. This portfolio is a small reflection of the
-            collective effort behind my training.
-          </p>
-        </div>
-      </section>
+  <SectionTitle eyebrow="Section 01" title="Acknowledgment" icon={HiOutlineHeart} />
 
+  <div className="prose prose-sm max-w-none text-muted-foreground leading-relaxed space-y-4">
+    
+    <p>
+      I would like to sincerely express my gratitude to all the people who supported and guided me throughout my On-the-Job Training experience.
+    </p>
+
+    <p>
+      First, to our OJT Coordinator, <strong className="text-foreground">Ms. Marites D. Escultor</strong>, thank you for your patience, guidance, and continuous encouragement that helped us successfully complete this training journey.
+    </p>
+
+    <p>
+      To the <strong className="text-foreground">OMSC Registrar Office</strong>, I am deeply grateful for the opportunity to undergo my training in your institution. Thank you for allowing me to experience real office operations and for sharing valuable knowledge that contributed to my professional growth.
+    </p>
+
+    <p>
+      To my supervisor, <strong className="text-foreground">Mr. Michael T. Domingo</strong>, thank you for your guidance, support, and mentorship throughout my training. Your assistance and insights helped me improve my skills and understand the importance of responsibility in the workplace.
+    </p>
+
+    <p>
+      To my fellow interns, Ms. Mary Felle Malayas, Ms. Ranela Valencia, Mr. Dale Decain, and Mr. Kenji Fujita, thank you for the teamwork, support, and friendship we built during this journey. Your presence made the experience more enjoyable and meaningful.
+    </p>
+
+    <p>
+      To my family, I am truly grateful for your endless love, understanding, and motivation that kept me going through every challenge.
+    </p>
+
+    <p>
+      And above all, to Almighty God, thank You for the strength, wisdom, and guidance that allowed me to complete this training safely and successfully.
+    </p>
+
+    <p>
+      This experience has taught me valuable lessons that I will carry with me as I continue to grow in my chosen career.
+    </p>
+
+  </div>
+</section>
       {/* STUDENT TRAINEE PRAYER */}
       <section className="bg-card border border-border rounded-2xl p-6 sm:p-8 shadow-card">
         <SectionTitle eyebrow="Section 02" title="Student Trainee Prayer" icon={HiOutlineSparkles} />
@@ -213,45 +229,63 @@ export default function TitlePage() {
         </blockquote>
       </section>
 
-      {/* PERSONAL PHILOSOPHY */}
-      <section className="bg-card border border-border rounded-2xl p-6 sm:p-8 shadow-card">
-        <SectionTitle eyebrow="Section 03" title="Personal Philosophy" icon={HiOutlineLightBulb} />
-        <p className="text-muted-foreground leading-relaxed">
-          I believe that growth begins where comfort ends. Every line of code, every
-          conversation, every mistake is an opportunity to refine craft and
-          character. I strive to build with curiosity, work with integrity, and lead
-          with empathy — because technology is only as meaningful as the people it
-          serves.
-        </p>
-      </section>
+{/* PERSONAL PHILOSOPHY */}
+<section className="bg-card border border-border rounded-2xl p-6 sm:p-8 shadow-card">
+  <SectionTitle eyebrow="Section 03" title="Personal Philosophy" icon={HiOutlineLightBulb} />
+
+  <p className="text-muted-foreground leading-relaxed">
+    I believe that growth comes from real experience and consistent effort. During my On-the-Job Training
+    at the OMSC Registrar Office, I learned that being responsible, patient, and willing to learn is just as
+    important as technical skills.
+  </p>
+
+  <p className="text-muted-foreground leading-relaxed mt-4">
+    I aim to continue improving myself through every task I handle and to apply what I have learned in a
+    practical and meaningful way in my future career.
+  </p>
+</section>
 
       {/* CAREER PLAN */}
-      <section className="bg-card border border-border rounded-2xl p-6 sm:p-8 shadow-card">
-        <SectionTitle eyebrow="Section 04" title="Career Plan" icon={HiOutlineBriefcase} />
-        <div className="grid gap-4 sm:grid-cols-3">
-          {[
-            {
-              term: "Short-Term (0–2 yrs)",
-              text: "Begin a career as a full-stack developer, contribute to production-grade web applications, and earn relevant certifications.",
-            },
-            {
-              term: "Mid-Term (3–5 yrs)",
-              text: "Specialize in cloud architecture and DevOps, lead small engineering teams, and mentor junior developers.",
-            },
-            {
-              term: "Long-Term (5+ yrs)",
-              text: "Launch a tech venture focused on practical solutions for local businesses while continuously contributing to the dev community.",
-            },
-          ].map((g) => (
-            <div key={g.term} className="bg-secondary/60 rounded-xl p-5 border border-border">
-              <p className="text-xs font-bold uppercase tracking-wider text-primary">
-                {g.term}
-              </p>
-              <p className="mt-2 text-sm text-foreground leading-relaxed">{g.text}</p>
-            </div>
-          ))}
-        </div>
-      </section>
+<section className="bg-card border border-border rounded-2xl p-6 sm:p-8 shadow-card">
+  <SectionTitle eyebrow="Section 04" title="Career Plan" icon={HiOutlineBriefcase} />
+
+  <div className="grid gap-4 sm:grid-cols-3">
+
+    <div className="bg-secondary/60 rounded-xl p-5 border border-border">
+      <p className="text-xs font-bold uppercase tracking-wider text-primary">
+        Short-Term (0–2 yrs)
+      </p>
+      <p className="mt-2 text-sm text-foreground leading-relaxed">
+        Gain entry-level experience in an office or IT-related environment such as administrative support,
+        data management, or system assistance. Improve technical literacy and develop professional workplace skills
+        such as communication, organization, and time management.
+      </p>
+    </div>
+
+    <div className="bg-secondary/60 rounded-xl p-5 border border-border">
+      <p className="text-xs font-bold uppercase tracking-wider text-primary">
+        Mid-Term (3–5 yrs)
+      </p>
+      <p className="mt-2 text-sm text-foreground leading-relaxed">
+        Grow into a more specialized role such as system support, IT assistant, or business/process analyst.
+        Enhance knowledge in office systems, database management, and workflow optimization while taking on
+        greater responsibilities in the workplace.
+      </p>
+    </div>
+
+    <div className="bg-secondary/60 rounded-xl p-5 border border-border">
+      <p className="text-xs font-bold uppercase tracking-wider text-primary">
+        Long-Term (5+ yrs)
+      </p>
+      <p className="mt-2 text-sm text-foreground leading-relaxed">
+        Establish a stable career in the IT or administrative field, potentially in system management,
+        operations coordination, or business solutions. Aim to become a reliable professional who contributes
+        to improving organizational processes and efficiency.
+      </p>
+    </div>
+
+  </div>
+</section>
 
       {/* CHAPTER SHORTCUTS */}
       <section className="bg-card border border-border rounded-2xl p-6 sm:p-8 shadow-card">

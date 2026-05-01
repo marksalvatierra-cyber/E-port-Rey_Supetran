@@ -8,10 +8,25 @@ export default function DashboardLayout() {
   const location = useLocation();
 
   // Close mobile sidebar & scroll to top on route change
+  // Or scroll to hash anchor if present
   useEffect(() => {
     setMobileOpen(false);
-    window.scrollTo({ top: 0, behavior: "smooth" });
-  }, [location.pathname]);
+    
+    // If there's a hash, scroll to that element
+    if (location.hash) {
+      const id = location.hash.slice(1); // Remove the '#'
+      const element = document.getElementById(id);
+      if (element) {
+        // Add a small delay to ensure the DOM is ready
+        setTimeout(() => {
+          element.scrollIntoView({ behavior: "smooth", block: "start" });
+        }, 0);
+      }
+    } else {
+      // Otherwise scroll to top
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    }
+  }, [location.pathname, location.hash]);
 
   return (
     <div className="min-h-screen bg-background flex">
