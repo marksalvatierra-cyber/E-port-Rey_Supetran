@@ -3,24 +3,66 @@ import { Dialog, DialogContent } from "@/components/ui/dialog";
 import { HiOutlineDocumentText, HiOutlinePhotograph, HiOutlineDownload } from "react-icons/hi";
 import { useState } from "react";
 
-const items = [
-  { title: "Evaluation Form", type: "Appendix A", icon: HiOutlineDocumentText, image: "/appendices/appendix-a.jpg" },
-  { title: "Photocopy Registration Form", type: "Appendix B", icon: HiOutlineDocumentText, image: "/appendices/appendix-b.jpg" },
-  { title: "Photocopy Validated ID", type: "Appendix C", icon: HiOutlineDocumentText, image: "/appendices/appendix-c.jpg" },
-  { title: "Parent's Consent", type: "Appendix D", icon: HiOutlinePhotograph, image: "/appendices/appendix-d.jpg" },
-  { title: "Medical Certificate", type: "Appendix E", icon: HiOutlineDocumentText, image: "/appendices/appendix-e.jpg" },
+type AppendixItem = {
+  title: string;
+  type: string;
+  icon: typeof HiOutlineDocumentText;
+  image?: string;
+  pages?: string[];
+};
+
+const items: AppendixItem[] = [
+  { title: "Evaluation Form", type: "Appendix A", icon: HiOutlineDocumentText, image: "/appendices/evaluation.jpg" },
+  { title: "Photocopy Registration Form", type: "Appendix B", icon: HiOutlineDocumentText, image: "/appendices/registration.jpg" },
+  { title: "Photocopy Validated ID", type: "Appendix C", icon: HiOutlineDocumentText, pages: [
+    "/appendices/id1.jpg",
+    "/appendices/id2.jpg",
+  ] },
+  { title: "Parent's Consent", type: "Appendix D", icon: HiOutlinePhotograph, pages: [
+    "/appendices/concent-form_page1.jpg",
+    "/appendices/concent-form_page2.jpg",
+    "/appendices/concent-form_page3.jpg",
+    "/appendices/concent-form_page4.jpg",
+    "/appendices/concent-form_page5.jpg",
+  ] },
+  { title: "Medical Certificate", type: "Appendix E", icon: HiOutlineDocumentText, image: "/appendices/med-cert.jpg" },
   { title: "Certificate of Good Moral Character", type: "Appendix F", icon: HiOutlineDocumentText, image: "/appendices/appendix-f.jpg" },
-  { title: "Application Letter", type: "Appendix G", icon: HiOutlineDocumentText, image: "/appendices/appendix-g.jpg" },
-  { title: "Endorsement Letter", type: "Appendix H", icon: HiOutlineDocumentText, image: "/appendices/appendix-h.jpg" },
+  { title: "Application Letter", type: "Appendix G", icon: HiOutlineDocumentText, image: "/appendices/app-letter.jpg" },
+  { title: "Endorsement Letter", type: "Appendix H", icon: HiOutlineDocumentText, image: "/appendices/endorsement.jpg" },
   { title: "Memorandum of Agreement", type: "Appendix I", icon: HiOutlineDocumentText, image: "/appendices/appendix-i.jpg" },
-  { title: "Daily Time Record (Time Card)", type: "Appendix J", icon: HiOutlinePhotograph, image: "/appendices/appendix-j.jpg" },
-  { title: "Certificate of Completion", type: "Appendix K", icon: HiOutlineDocumentText, image: "/appendices/appendix-k.jpg" },
-  { title: "Certificate of Clearance", type: "Appendix L", icon: HiOutlineDocumentText, image: "/appendices/appendix-l.jpg" },
-  { title: "Curriculum Vitae", type: "Appendix M", icon: HiOutlineDocumentText, image: "/appendices/appendix-m.jpg" },
+  { title: "Daily Time Record (Time Card)", type: "Appendix J", icon: HiOutlinePhotograph, pages: [
+    "/appendices/DTR-page1.jpg",
+    "/appendices/DTR-page2.jpg",
+    "/appendices/DTR-page3.jpg",
+  ] },
+  { title: "Certificate of Completion", type: "Appendix K", icon: HiOutlineDocumentText, image: "/appendices/completion.jpg" },
+  { title: "Certificate of Clearance", type: "Appendix L", icon: HiOutlineDocumentText, image: "/appendices/clearance.jpg" },
+  { title: "Curriculum Vitae", type: "Appendix M", icon: HiOutlineDocumentText,pages: [
+    "/appendices/vitae1.jpg",
+    "/appendices/vitae2.jpg"
+  ] },
 ];
 
 export default function Appendices() {
-  const [selectedImage, setSelectedImage] = useState<string | null>(null);
+  const [selectedItem, setSelectedItem] = useState<AppendixItem | null>(null);
+  const [zoom, setZoom] = useState(1);
+
+  const openItem = (item: AppendixItem) => {
+    setSelectedItem(item);
+    setZoom(1);
+  };
+
+  const closeImage = () => {
+    setSelectedItem(null);
+    setZoom(1);
+  };
+
+  const zoomIn = () => setZoom((currentZoom) => Math.min(currentZoom + 0.25, 3));
+  const zoomOut = () => setZoom((currentZoom) => Math.max(currentZoom - 0.25, 0.5));
+  const resetZoom = () => setZoom(1);
+
+  const previewPages = selectedItem?.pages ?? (selectedItem?.image ? [selectedItem.image] : []);
+
   return (
     <div className="space-y-6 animate-fade-in">
       <div className="bg-card rounded-xl border border-border shadow-card p-6">
@@ -56,7 +98,7 @@ export default function Appendices() {
 
               <div className="mt-4 flex items-center gap-4">
                 <button 
-                  onClick={() => setSelectedImage(item.image)}
+                  onClick={() => openItem(item)}
                   className="inline-flex items-center gap-2 text-sm font-medium text-blue-500 hover:gap-3 transition-all"
                 >
                   View
@@ -71,14 +113,59 @@ export default function Appendices() {
         })}
       </div>
 
-      <Dialog open={!!selectedImage} onOpenChange={() => setSelectedImage(null)}>
-        <DialogContent className="max-w-2xl max-h-screen">
-          {selectedImage && (
-            <img 
-              src={selectedImage} 
-              alt="Appendix" 
-              className="w-full h-auto rounded-lg"
-            />
+      <Dialog open={!!selectedItem} onOpenChange={(open) => !open && closeImage()}>
+       <DialogContent className="max-w-5xl w-[95vw] h-[90vh] p-4 gap-4 flex flex-col bg-black/40 backdrop-blur-sm [&>button]:bg-transparent [&>button]:shadow-none [&>button]:border-none [&>button]:text-white [&>button]:hover:bg-transparent">
+          {selectedItem && (
+            <>
+              <div className="flex flex-wrap items-center justify-between gap-3 pr-10 text-white sm:pr-12">
+                <div>
+                  <h3 className="text-base font-semibold">{selectedItem.title} preview</h3>
+                  <p className="text-xs text-white/70">
+                    {previewPages.length > 1
+                      ? `This document has ${previewPages.length} pages. Zoom applies to all pages, and you can scroll through them vertically.`
+                      : "Zoom in for details, zoom out to fit more on screen, and scroll to pan when enlarged."}
+                  </p>
+                </div>
+
+                <div className="flex items-center gap-2">
+                  <button
+                    onClick={zoomOut}
+                    disabled={zoom <= 0.5}
+                    className="rounded-md border border-white/20 bg-white/10 px-3 py-1.5 text-sm font-medium text-white transition hover:bg-white/20 disabled:cursor-not-allowed disabled:opacity-40"
+                  >
+                    -
+                  </button>
+                  <button
+                    onClick={resetZoom}
+                    className="rounded-md border border-white/20 bg-white/10 px-3 py-1.5 text-sm font-medium text-white transition hover:bg-white/20"
+                  >
+                    {Math.round(zoom * 100)}%
+                  </button>
+                  <button
+                    onClick={zoomIn}
+                    disabled={zoom >= 3}
+                    className="rounded-md border border-white/20 bg-white/10 px-3 py-1.5 text-sm font-medium text-white transition hover:bg-white/20 disabled:cursor-not-allowed disabled:opacity-40"
+                  >
+                    +
+                  </button>
+                </div>
+              </div>
+
+              <div className="min-h-0 flex-1 overflow-auto rounded-xl bg-black/50 p-4">
+                <div className="space-y-4">
+                  {previewPages.map((page, pageIndex) => (
+                    <div key={`${page}-${pageIndex}`} className="flex justify-center">
+                      <img
+                        src={page}
+                        alt={`${selectedItem.title} page ${pageIndex + 1}`}
+                        className="block h-auto max-w-none rounded-lg shadow-2xl transition-transform duration-200"
+                        style={{ width: `${zoom * 100}%` }}
+                      />
+                    </div>
+                  ))}
+                </div>
+              </div>
+            </>
           )}
         </DialogContent>
       </Dialog>
