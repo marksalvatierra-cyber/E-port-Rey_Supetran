@@ -133,7 +133,7 @@ export default function TitlePage() {
             {studentInfo.map((info) => (
               <div
                 key={info.label}
-                className="bg-card/90 backdrop-blur-sm border-l-4 border-primary rounded-lg px-5 py-4 shadow-card"
+                className="bg-background/20 backdrop-blur-md border border-white/30 rounded-lg px-5 py-4 shadow-card"
               >
                 <p className="text-[11px] uppercase tracking-wider text-muted-foreground font-semibold">
                   {info.label}

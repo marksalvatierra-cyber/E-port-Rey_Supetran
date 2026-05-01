@@ -105,10 +105,6 @@ export default function Appendices() {
                 >
                   View
                 </button>
-
-                <button className="inline-flex items-center gap-2 text-sm font-medium text-primary hover:gap-3 transition-all">
-                  <HiOutlineDownload /> Download
-                </button>
               </div>
             </div>
           );
