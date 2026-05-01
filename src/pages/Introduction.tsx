@@ -51,7 +51,7 @@ export default function Introduction() {
   <div className="grid md:grid-cols-2 gap-4">
 
     {/* CARD 1 */}
-    <div className="p-4 border rounded-lg flex gap-3 transition-all duration-300 hover:-translate-y-2 hover:shadow-xl hover:border-blue-300 bg-white">
+    <div className="p-4 border rounded-lg flex gap-3 transition-all duration-300 hover:-translate-y-2 hover:shadow-xl hover:border-blue-300 bg-card">
       <ClipboardList className="text-blue-500 shrink-0" />
       <p>
         <strong>Administrative and Records Management Experience</strong> <br />
@@ -62,7 +62,7 @@ export default function Introduction() {
     </div>
 
     {/* CARD 2 */}
-    <div className="p-4 border rounded-lg flex gap-3 transition-all duration-300 hover:-translate-y-2 hover:shadow-xl hover:border-green-300 bg-white">
+    <div className="p-4 border rounded-lg flex gap-3 transition-all duration-300 hover:-translate-y-2 hover:shadow-xl hover:border-green-300 bg-card">
       <Database className="text-green-500 shrink-0" />
       <p>
         <strong>Technical and Data Encoding Skills</strong> <br />
@@ -72,7 +72,7 @@ export default function Introduction() {
     </div>
 
     {/* CARD 3 */}
-    <div className="p-4 border rounded-lg flex gap-3 transition-all duration-300 hover:-translate-y-2 hover:shadow-xl hover:border-orange-300 bg-white">
+    <div className="p-4 border rounded-lg flex gap-3 transition-all duration-300 hover:-translate-y-2 hover:shadow-xl hover:border-orange-300 bg-card">
       <FileText className="text-orange-500 shrink-0" />
       <p>
         <strong>Document Processing and Issuance</strong> <br />
@@ -82,7 +82,7 @@ export default function Introduction() {
     </div>
 
     {/* CARD 4 */}
-    <div className="p-4 border rounded-lg flex gap-3 transition-all duration-300 hover:-translate-y-2 hover:shadow-xl hover:border-purple-300 bg-white">
+    <div className="p-4 border rounded-lg flex gap-3 transition-all duration-300 hover:-translate-y-2 hover:shadow-xl hover:border-purple-300 bg-card">
       <CheckCircle className="text-purple-500 shrink-0" />
       <p>
         <strong>Attention to Accuracy and Detail</strong> <br />
@@ -92,7 +92,7 @@ export default function Introduction() {
     </div>
 
     {/* CARD 5 */}
-    <div className="p-4 border rounded-lg flex gap-3 transition-all duration-300 hover:-translate-y-2 hover:shadow-xl hover:border-yellow-300 bg-white">
+    <div className="p-4 border rounded-lg flex gap-3 transition-all duration-300 hover:-translate-y-2 hover:shadow-xl hover:border-yellow-300 bg-card">
       <FolderOpen className="text-yellow-500 shrink-0" />
       <p>
         <strong>Organizational and Filing Skills</strong> <br />
@@ -102,7 +102,7 @@ export default function Introduction() {
     </div>
 
     {/* CARD 6 */}
-    <div className="p-4 border rounded-lg flex gap-3 transition-all duration-300 hover:-translate-y-2 hover:shadow-xl hover:border-pink-300 bg-white">
+    <div className="p-4 border rounded-lg flex gap-3 transition-all duration-300 hover:-translate-y-2 hover:shadow-xl hover:border-pink-300 bg-card">
       <MessageSquare className="text-pink-500 shrink-0" />
       <p>
         <strong>Communication and Office Interaction</strong> <br />
@@ -112,7 +112,7 @@ export default function Introduction() {
     </div>
 
     {/* CARD 7 (full width) */}
-    <div className="p-4 border rounded-lg flex gap-3 md:col-span-2 transition-all duration-300 hover:-translate-y-2 hover:shadow-xl hover:border-indigo-300 bg-white">
+    <div className="p-4 border rounded-lg flex gap-3 md:col-span-2 transition-all duration-300 hover:-translate-y-2 hover:shadow-xl hover:border-indigo-300 bg-card">
       <Briefcase className="text-indigo-500 shrink-0" />
       <p>
         <strong>Professional Growth and Workplace Discipline</strong> <br />
@@ -141,7 +141,7 @@ export default function Introduction() {
   <div className="grid md:grid-cols-2 gap-4">
 
     {/* TRAINING PERIOD */}
-    <div className="p-4 border rounded-lg flex gap-3 transition-all duration-300 hover:-translate-y-2 hover:shadow-xl hover:border-blue-300 bg-white">
+    <div className="p-4 border rounded-lg flex gap-3 transition-all duration-300 hover:-translate-y-2 hover:shadow-xl hover:border-blue-300 bg-card">
       <Calendar className="text-blue-500 shrink-0" />
       <div>
         <strong>Training Period</strong>
@@ -151,7 +151,7 @@ export default function Introduction() {
     </div>
 
     {/* PLACE */}
-    <div className="p-4 border rounded-lg flex gap-3 transition-all duration-300 hover:-translate-y-2 hover:shadow-xl hover:border-green-300 bg-white">
+    <div className="p-4 border rounded-lg flex gap-3 transition-all duration-300 hover:-translate-y-2 hover:shadow-xl hover:border-green-300 bg-card">
       <MapPin className="text-green-500 shrink-0" />
       <div>
         <strong>Place of Internship</strong>
@@ -161,7 +161,7 @@ export default function Introduction() {
     </div>
 
     {/* ROLE */}
-    <div className="p-4 border rounded-lg flex gap-3 transition-all duration-300 hover:-translate-y-2 hover:shadow-xl hover:border-purple-300 bg-white">
+    <div className="p-4 border rounded-lg flex gap-3 transition-all duration-300 hover:-translate-y-2 hover:shadow-xl hover:border-purple-300 bg-card">
       <User className="text-purple-500 shrink-0" />
       <div>
         <strong>Role</strong>
@@ -171,7 +171,7 @@ export default function Introduction() {
     </div>
 
     {/* WORKING HOURS */}
-    <div className="p-4 border rounded-lg flex gap-3 transition-all duration-300 hover:-translate-y-2 hover:shadow-xl hover:border-orange-300 bg-white">
+    <div className="p-4 border rounded-lg flex gap-3 transition-all duration-300 hover:-translate-y-2 hover:shadow-xl hover:border-orange-300 bg-card">
       <Clock className="text-orange-500 shrink-0" />
       <div>
         <strong>Working Hours</strong>
@@ -181,7 +181,7 @@ export default function Introduction() {
     </div>
 
     {/* WORK ENVIRONMENT */}
-    <div className="p-4 border rounded-lg flex gap-3 md:col-span-2 transition-all duration-300 hover:-translate-y-2 hover:shadow-xl hover:border-indigo-300 bg-white">
+    <div className="p-4 border rounded-lg flex gap-3 md:col-span-2 transition-all duration-300 hover:-translate-y-2 hover:shadow-xl hover:border-indigo-300 bg-card">
       <Building className="text-indigo-500 shrink-0" />
       <div>
         <strong>Work Environment</strong>

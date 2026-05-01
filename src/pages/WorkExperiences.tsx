@@ -69,7 +69,7 @@ export default function WorkExperiences() {
     ].map((week, i) => (
       <div
         key={i}
-        className="p-5 border rounded-lg bg-white transition-all duration-300 hover:-translate-y-1 hover:shadow-xl"
+        className="p-5 border rounded-lg bg-card transition-all duration-300 hover:-translate-y-1 hover:shadow-xl"
       >
         {/* HEADER */}
         <div className="mb-3">
@@ -123,7 +123,7 @@ export default function WorkExperiences() {
     ].map((item) => (
       <div
         key={item.month}
-        className="p-4 border rounded-lg bg-white text-center transition-all duration-300 hover:-translate-y-1 hover:shadow-lg"
+        className="p-4 border rounded-lg bg-card text-center transition-all duration-300 hover:-translate-y-1 hover:shadow-lg"
       >
         <p className="font-semibold">{item.month}</p>
         <p className="text-lg">{item.total}</p>
@@ -189,7 +189,7 @@ export default function WorkExperiences() {
 
       <div className="overflow-x-auto border rounded-lg">
         <table className="w-full text-sm text-left">
-          <thead className="bg-gray-100">
+          <thead className="bg-card-100">
             <tr>
               <th className="p-2">Date</th>
               <th className="p-2">AM In</th>
@@ -214,7 +214,7 @@ export default function WorkExperiences() {
   ))}
 
   {/* FINAL SUMMARY */}
-  <div className="mt-6 p-4 border rounded-lg bg-white shadow-md">
+  <div className="mt-6 p-4 border rounded-lg bg-card shadow-md">
     <p><strong>Total Hours Rendered:</strong> 495:30</p>
     <p><strong>Required Hours:</strong> 486</p>
   </div>
@@ -279,7 +279,7 @@ export default function WorkExperiences() {
   ].map((week, index) => (
     <div
       key={index}
-      className="mb-8 p-4 border rounded-lg bg-white transition-all duration-300 hover:-translate-y-1 hover:shadow-xl"
+      className="mb-8 p-4 border rounded-lg bg-card transition-all duration-300 hover:-translate-y-1 hover:shadow-xl"
     >
       {/* HEADER */}
       <div className="mb-3">
@@ -326,7 +326,7 @@ export default function WorkExperiences() {
   <div className="space-y-6">
 
     {/* 1. SETTING */}
-    <div className="p-5 border rounded-lg bg-white transition-all duration-300 hover:-translate-y-1 hover:shadow-xl">
+    <div className="p-5 border rounded-lg bg-card transition-all duration-300 hover:-translate-y-1 hover:shadow-xl">
       <h3 className="font-semibold mb-3">1. Setting</h3>
 
       <div className="ml-4 space-y-3 border-l-2 border-gray-200 pl-4">
@@ -359,7 +359,7 @@ export default function WorkExperiences() {
     </div>
 
     {/* 2. SITE SUPERVISOR */}
-    <div className="p-5 border rounded-lg bg-white transition-all duration-300 hover:-translate-y-1 hover:shadow-xl">
+    <div className="p-5 border rounded-lg bg-card transition-all duration-300 hover:-translate-y-1 hover:shadow-xl">
       <h3 className="font-semibold mb-3">2. Site Supervisor</h3>
 
       <div className="ml-4 space-y-3 border-l-2 border-gray-200 pl-4">
@@ -392,7 +392,7 @@ export default function WorkExperiences() {
     </div>
 
     {/* 3. ENVIRONMENT */}
-    <div className="p-5 border rounded-lg bg-white transition-all duration-300 hover:-translate-y-1 hover:shadow-xl">
+    <div className="p-5 border rounded-lg bg-card transition-all duration-300 hover:-translate-y-1 hover:shadow-xl">
       <h3 className="font-semibold mb-3">3. Environmental Conditions or Events</h3>
 
       <div className="ml-4 space-y-3 border-l-2 border-gray-200 pl-4">
@@ -425,7 +425,7 @@ export default function WorkExperiences() {
     </div>
 
     {/* 4. SELF-ASSESSMENT */}
-    <div className="p-5 border rounded-lg bg-white transition-all duration-300 hover:-translate-y-1 hover:shadow-xl">
+    <div className="p-5 border rounded-lg bg-card transition-all duration-300 hover:-translate-y-1 hover:shadow-xl">
       <h3 className="font-semibold mb-3">4. Self-Assessment</h3>
 
       <div className="ml-4 space-y-3 border-l-2 border-gray-200 pl-4">
@@ -465,7 +465,7 @@ export default function WorkExperiences() {
     </div>
 
     {/* 5. GENERAL */}
-    <div className="p-5 border rounded-lg bg-white transition-all duration-300 hover:-translate-y-1 hover:shadow-xl">
+    <div className="p-5 border rounded-lg bg-card transition-all duration-300 hover:-translate-y-1 hover:shadow-xl">
       <h3 className="font-semibold mb-3">5. General</h3>
 
       <div className="ml-4 space-y-3 border-l-2 border-gray-200 pl-4">

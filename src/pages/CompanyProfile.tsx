@@ -23,7 +23,7 @@ export default function CompanyProfile() {
   <div className="grid md:grid-cols-2 gap-4">
 
     {/* CARD 1 */}
-    <div className="p-5 border rounded-lg bg-white flex gap-3 transition-all duration-300 hover:-translate-y-2 hover:shadow-xl hover:border-blue-300">
+    <div className="p-5 border rounded-lg bg-card flex gap-3 transition-all duration-300 hover:-translate-y-2 hover:shadow-xl hover:border-blue-300">
       <Users className="text-blue-500 shrink-0" />
       <p>
         <strong>Academic & Administrative Services</strong> <br />
@@ -32,7 +32,7 @@ export default function CompanyProfile() {
     </div>
 
     {/* CARD 2 */}
-    <div className="p-5 border rounded-lg bg-white flex gap-3 transition-all duration-300 hover:-translate-y-2 hover:shadow-xl hover:border-green-300">
+    <div className="p-5 border rounded-lg bg-card flex gap-3 transition-all duration-300 hover:-translate-y-2 hover:shadow-xl hover:border-green-300">
       <FileText className="text-green-500 shrink-0" />
       <p>
         <strong>Student Records Management</strong> <br />
@@ -41,7 +41,7 @@ export default function CompanyProfile() {
     </div>
 
     {/* CARD 3 */}
-    <div className="p-5 border rounded-lg bg-white flex gap-3 transition-all duration-300 hover:-translate-y-2 hover:shadow-xl hover:border-orange-300">
+    <div className="p-5 border rounded-lg bg-card flex gap-3 transition-all duration-300 hover:-translate-y-2 hover:shadow-xl hover:border-orange-300">
       <Building2 className="text-orange-500 shrink-0" />
       <p>
         <strong>Document Processing</strong> <br />
@@ -50,7 +50,7 @@ export default function CompanyProfile() {
     </div>
 
     {/* CARD 4 */}
-    <div className="p-5 border rounded-lg bg-white flex gap-3 transition-all duration-300 hover:-translate-y-2 hover:shadow-xl hover:border-purple-300">
+    <div className="p-5 border rounded-lg bg-card flex gap-3 transition-all duration-300 hover:-translate-y-2 hover:shadow-xl hover:border-purple-300">
       <ShieldCheck className="text-purple-500 shrink-0" />
       <p>
         <strong>Security & Confidentiality</strong> <br />
@@ -78,7 +78,7 @@ export default function CompanyProfile() {
 
     {/* CARD 1 */}
     <div className="text-center transition-all duration-300 hover:-translate-y-2 hover:shadow-xl">
-      <div className="border rounded-lg overflow-hidden bg-white">
+      <div className="border rounded-lg overflow-hidden bg-card">
         <img
           src="/images/admin.jpg"
           alt="Administrative Office Operations"
@@ -90,7 +90,7 @@ export default function CompanyProfile() {
 
     {/* CARD 2 */}
     <div className="text-center transition-all duration-300 hover:-translate-y-2 hover:shadow-xl">
-      <div className="border rounded-lg overflow-hidden bg-white">
+      <div className="border rounded-lg overflow-hidden bg-card">
         <img
           src="/images/record.jpg"
           alt="Student Records Management"
@@ -102,7 +102,7 @@ export default function CompanyProfile() {
 
     {/* CARD 3 */}
     <div className="text-center transition-all duration-300 hover:-translate-y-2 hover:shadow-xl">
-      <div className="border rounded-lg overflow-hidden bg-white">
+      <div className="border rounded-lg overflow-hidden bg-card">
         <img
           src="/images/docu.jpg"
           alt="Document Processing and Verification"
@@ -114,7 +114,7 @@ export default function CompanyProfile() {
 
     {/* CARD 4 */}
     <div className="text-center transition-all duration-300 hover:-translate-y-2 hover:shadow-xl">
-      <div className="border rounded-lg overflow-hidden bg-white">
+      <div className="border rounded-lg overflow-hidden bg-card">
         <img
           src="/images/public.jpg"
           alt="Public Service and Support"
@@ -135,7 +135,7 @@ export default function CompanyProfile() {
   <div className="grid md:grid-cols-2 gap-6">
 
     {/* VISION */}
-    <div className="p-6 border rounded-lg bg-white transition-all duration-300 hover:-translate-y-2 hover:shadow-xl hover:border-blue-300">
+    <div className="p-6 border rounded-lg bg-card transition-all duration-300 hover:-translate-y-2 hover:shadow-xl hover:border-blue-300">
       <div className="flex items-center gap-2 mb-3">
         <Eye className="text-blue-500" />
         <h3 className="text-lg font-semibold">Vision</h3>
@@ -148,7 +148,7 @@ export default function CompanyProfile() {
     </div>
 
     {/* MISSION */}
-    <div className="p-6 border rounded-lg bg-white transition-all duration-300 hover:-translate-y-2 hover:shadow-xl hover:border-green-300">
+    <div className="p-6 border rounded-lg bg-card transition-all duration-300 hover:-translate-y-2 hover:shadow-xl hover:border-green-300">
       <div className="flex items-center gap-2 mb-3">
         <Target className="text-green-500" />
         <h3 className="text-lg font-semibold">Mission</h3>
@@ -182,7 +182,7 @@ export default function CompanyProfile() {
   <div className="grid md:grid-cols-2 gap-4">
 
     {/* MAIN CAMPUS */}
-    <div className="p-5 border rounded-lg bg-white transition-all duration-300 hover:-translate-y-2 hover:shadow-xl hover:border-blue-300 md:col-span-2">
+    <div className="p-5 border rounded-lg bg-card transition-all duration-300 hover:-translate-y-2 hover:shadow-xl hover:border-blue-300 md:col-span-2">
       <div className="flex items-center gap-2 mb-2">
         <School className="text-blue-500" />
         <h3 className="font-semibold">OMSC Main Campus</h3>
@@ -197,7 +197,7 @@ export default function CompanyProfile() {
     </div>
 
     {/* SAN JOSE CAMPUS */}
-    <div className="p-5 border rounded-lg bg-white transition-all duration-300 hover:-translate-y-2 hover:shadow-xl hover:border-green-300">
+    <div className="p-5 border rounded-lg bg-card transition-all duration-300 hover:-translate-y-2 hover:shadow-xl hover:border-green-300">
       <div className="flex items-center gap-2 mb-2">
         <GraduationCap className="text-green-500" />
         <h3 className="font-semibold">OMSC San Jose Campus</h3>
@@ -212,7 +212,7 @@ export default function CompanyProfile() {
     </div>
 
     {/* MURTHA */}
-    <div className="p-5 border rounded-lg bg-white transition-all duration-300 hover:-translate-y-2 hover:shadow-xl hover:border-yellow-300">
+    <div className="p-5 border rounded-lg bg-card transition-all duration-300 hover:-translate-y-2 hover:shadow-xl hover:border-yellow-300">
       <div className="flex items-center gap-2 mb-2">
         <MapPin className="text-yellow-500" />
         <h3 className="font-semibold">OMSC Murtha Campus</h3>
@@ -225,7 +225,7 @@ export default function CompanyProfile() {
     </div>
 
     {/* SABLAYAN */}
-    <div className="p-5 border rounded-lg bg-white transition-all duration-300 hover:-translate-y-2 hover:shadow-xl hover:border-purple-300">
+    <div className="p-5 border rounded-lg bg-card transition-all duration-300 hover:-translate-y-2 hover:shadow-xl hover:border-purple-300">
       <div className="flex items-center gap-2 mb-2">
         <School className="text-purple-500" />
         <h3 className="font-semibold">OMSC Sablayan Campus</h3>
@@ -238,7 +238,7 @@ export default function CompanyProfile() {
     </div>
 
     {/* MAMBURAO */}
-    <div className="p-5 border rounded-lg bg-white transition-all duration-300 hover:-translate-y-2 hover:shadow-xl hover:border-pink-300">
+    <div className="p-5 border rounded-lg bg-card transition-all duration-300 hover:-translate-y-2 hover:shadow-xl hover:border-pink-300">
       <div className="flex items-center gap-2 mb-2">
         <MapPin className="text-pink-500" />
         <h3 className="font-semibold">OMSC Mamburao Campus</h3>
@@ -251,7 +251,7 @@ export default function CompanyProfile() {
     </div>
 
     {/* LUBANG */}
-    <div className="p-5 border rounded-lg bg-white transition-all duration-300 hover:-translate-y-2 hover:shadow-xl hover:border-indigo-300 md:col-span-2">
+    <div className="p-5 border rounded-lg bg-card transition-all duration-300 hover:-translate-y-2 hover:shadow-xl hover:border-indigo-300 md:col-span-2">
   <div className="flex items-center gap-2 mb-2">
     <School className="text-indigo-500" />
     <h3 className="font-semibold">OMSC Lubang Campus</h3>
@@ -273,7 +273,7 @@ export default function CompanyProfile() {
   subtitle="Structure of the Registrar Office."
 >
   <div className="flex justify-center">
-    <div className="w-full max-w-5xl border rounded-lg overflow-hidden shadow-md bg-white transition-all duration-300 hover:shadow-2xl">
+    <div className="w-full max-w-5xl border rounded-lg overflow-hidden shadow-md bg-card transition-all duration-300 hover:shadow-2xl">
       
       <img
         src="/images/organizational-chart.jpg"
