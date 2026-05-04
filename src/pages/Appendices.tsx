@@ -37,7 +37,10 @@ const items: AppendixItem[] = [
   ] },
   { title: "Certificate of Completion", type: "Appendix K", icon: HiOutlineDocumentText, image: "/appendices/completion.jpg" },
   { title: "Certificate of Clearance", type: "Appendix L", icon: HiOutlineDocumentText, image: "/appendices/clearance.jpg" },
-  { title: "Performance/Proficiency Rating Sheet", type: "Appendix M", icon: HiOutlineDocumentText, image: "/appendices/clearance.jpg" },
+  { title: "Performance/Proficiency Rating Sheet", type: "Appendix M", icon: HiOutlinePhotograph, pages: [
+    "/appendices/sheet1.jpg",
+    "/appendices/sheet2.jpg",
+  ] },
   { title: "Curriculum Vitae", type: "Appendix Q", icon: HiOutlineDocumentText,pages: [
     "/appendices/vitae1.jpg",
     "/appendices/vitae2.jpg"
